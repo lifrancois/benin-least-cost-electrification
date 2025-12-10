@@ -464,7 +464,7 @@ geojson_s2 = DATA_DIR / "benin_scenario2_results.geojson"
 settlements_scen2_export.drop(columns="geometry").to_csv(csv_s2, index=False)
 settlements_scen2_export.to_file(geojson_s2, driver="GeoJSON")
 
-print("✅ Scénario 2 exporté :")
+print("✅ Scenario 2 exported :")
 print("   CSV     :", csv_s2)
 print("   GeoJSON :", geojson_s2)
 
@@ -472,10 +472,10 @@ print("   GeoJSON :", geojson_s2)
 # In[14]:
 
 
-print("=== Scénario 1 – Baseline ===")
+print("=== Scenario 1 – Baseline ===")
 print(settlements_scen1["best_option"].value_counts(normalize=True) * 100)
 
-print("\n=== Scénario 2 – Politique mini-grids + grid ===")
+print("\n=== Scenario 2 – Politic mini-grids + grid ===")
 print(settlements_scen2["best_option_s2"].value_counts(normalize=True) * 100)
 
 
